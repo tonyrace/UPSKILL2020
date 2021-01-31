@@ -1,0 +1,5 @@
+library(ggplot2)
+require(data.table)
+df <- read.delim("data/acunetix.txt",header = FALSE)
+colnames(df)<-c("host","ident","authuser","time","xxx","request","status","bytes")
+head(df)
